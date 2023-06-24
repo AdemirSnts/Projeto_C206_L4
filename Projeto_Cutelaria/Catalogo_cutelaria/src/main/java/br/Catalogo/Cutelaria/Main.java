@@ -44,14 +44,15 @@ public class Main {
 
                     //Limpando o buffer
                     sc.nextLine();
-                    System.out.println("Coloque o modelo: FACA OU CANIVETE ");
+                    System.out.println("Coloque o modelo: FACA OU CANIVETE: ");
                     cadAuxiliar.setModelo( sc.nextLine());
-                    System.out.println("Insira o nome: ");
-                    cadAuxiliar.setNome( sc.nextLine());
+                    System.out.println("Nome: ");
+                    cadAuxiliar.setNome(sc.nextLine());
                     System.out.println("Numero de identificacao: ");
                     cadAuxiliar.setNumId( sc.nextInt());
                     //Limpando o buffer
                     sc.nextLine();
+
                     try {
                         System.out.println("Tipo de aco: ");
                         cadAuxiliar.setTipoAco(sc.nextLine());
@@ -76,7 +77,6 @@ public class Main {
                 }
                 case 2: {
                     System.out.println("****MOSTRANDO AS FACAS E CANIVETES QUE ESTAO PARA A VENDA****");
-
 
                         for (int i = 0; i < cadastros.size(); i++) {
                            cadastros.get(i).mostrarInfos();

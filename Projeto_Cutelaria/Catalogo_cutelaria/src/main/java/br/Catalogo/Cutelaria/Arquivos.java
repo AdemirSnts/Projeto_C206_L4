@@ -24,12 +24,15 @@ public class Arquivos {
             bw = new BufferedWriter(osw);
 
             // Efetivamente escrevendo no arquivo
+
             bw.write("***CADASTRO***\n");
+
             bw.write(cadastro.getModelo() + "\n");
-            bw.write(cadastro.getNome() + "\n");
+           // bw.write(cadastro.getNome() + "\n");
             bw.write(cadastro.getNumId() + "\n");
             bw.write(cadastro.getTipoAco() + "\n");
             bw.write(cadastro.getPreco() + "\n");
+
 
 
         }catch (Exception e) {
@@ -74,8 +77,9 @@ public class Arquivos {
                     Cadastro auxCadastro = new Cadastro();
 
                     // Preenchendo as informações para o cadastro
+
                     auxCadastro.setModelo(br.readLine());
-                    auxCadastro.setNome(br.readLine());
+                   // auxCadastro.setNome(br.readLine());
                     auxCadastro.setNumId(Integer.parseInt(br.readLine()));
                     auxCadastro.setTipoAco(br.readLine());
                     auxCadastro.setPreco(Double.parseDouble(br.readLine()));
